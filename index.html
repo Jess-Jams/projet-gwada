@@ -9,6 +9,13 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+        const button = document.getElementById('hello')
+
+        button.addEventListener('Click', ()=> {
+            window.alert('Hello There !')
+        })
+    </script>
     <div id="bloc">
         <h1> Salut Gwada</h1>
         <h2>Bien Ou BIEN le peuple !?</h2>
@@ -18,7 +25,7 @@
         <h6>Nouveau titre Daryl</h6>
     </div>
 
-    <input type="button" value="click me">
+    <input type="button" id="hello" value="click me">
     
 </body>
 </html>
