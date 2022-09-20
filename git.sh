@@ -2,5 +2,5 @@
 git checkout main
 git fetch
 git pull
-git checkout jess-branch
+git checkout <nom de branch>
 git merge main
