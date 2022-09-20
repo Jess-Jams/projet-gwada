@@ -4,12 +4,13 @@ body {
     font-size: 3em;
 }
 
-#bloc{
-margin: auto;
+#bloc {
+    margin: auto;
     width: 50%;
     text-align: center;
 
 }
+
 #bloc:hover {
     width: 50%;
     border: 5px solid white;
