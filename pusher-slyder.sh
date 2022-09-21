@@ -24,7 +24,31 @@ function funcMsg(){
 
 echo "Starting to save your code"
 git add .
+echo "Beginning to test your code with a coffee ( mocha, you've got ? )"
+mocha
+read -p "Do you want to continu or stop, say y to continue, or n to canceled :  " res
+if (($res=='y'))
+then
 echo "Your code is cached ( il est en mémoire volatile )"
 echo "Waiting for commit ( mais on a besoin d'un message )"
 test=0
-funcMsg $test
+funcMsg $test;
+elif (($res=='n'))
+then
+exit;
+else 
+echo "Please use 'y' or 'n', this is your last try";
+read -p "Do you want to continu or stop, say y to continue, or n to canceled :  " restwo
+if (($restwo=='y'))
+then
+echo "Your code is cached ( il est en mémoire volatile )"
+echo "Waiting for commit ( mais on a besoin d'un message )"
+test=0
+funcMsg $test;
+elif (($restwo=='n'))
+then
+exit;
+else 
+exit;
+fi
+fi
